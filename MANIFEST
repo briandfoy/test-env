@@ -1,7 +1,10 @@
+# $Id$
+Changes
 MANIFEST
 Makefile.PL
 lib/Env.pm
 t/env.t
 t/load.t
 t/pod.t
+t/prereq.t
 t/test_manifest
