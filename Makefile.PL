@@ -1,10 +1,14 @@
 # $Id$
 use ExtUtils::MakeMaker;
 
-my $tests = do {
-	local @ARGV = qw(t/test_manifest);
-	my $data = join " ", map {chomp; "t/$_" } <>;
-	};
+sub ExtUtils::MM_Any::test_via_harness
+	{
+    my($self, $perl, $tests) = @_;
+
+    return qq|\t$perl "-MTest::Manifest" | .
+           qq|"-e" "run_t_manifest(\$(TEST_VERBOSE), '\$(INST_LIB)', | .
+           qq|'\$(INST_ARCHLIB)')"\n|;
+	}
 	
 WriteMakefile
         (
@@ -15,16 +19,19 @@ WriteMakefile
  			'File::Find::Rule'      => '0',
  			'Test::Builder'         => '0',
  			'Test::Builder::Tester' => '0',
+ 			'Test::Manifest'        => '0.9',
   			'Test::More'            => '0',
 			'Test::Pod'             => '0',
- 			'Test::Prereq'          => '0',
+ 			'Test::Prereq'          => '0.14',
  			},
         'PM' => {
             'lib/Env.pm'     => '$(INST_LIBDIR)/Env.pm',
 			},
- 
- 		depend => { Makefile => 't/test_manifest' },
-        test   => { TESTS    => $tests },
+        'MAN3PODS' =>
+        	{
+        	'lib/Env.pm' => '$(INST_MAN3DIR)/Test::Env.3',
+        	},
+
         clean  => { FILES    => 'Test-Env-*' },
         );
 

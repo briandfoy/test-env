@@ -25,8 +25,7 @@ Test::Env - test the environment
 
 =head1 DESCRIPTION
 
-
-=head1 FUNCTIONS
+=head2 Functions
 
 =over 4
 
@@ -61,6 +60,16 @@ sub env_ok($$)
 	}
 	
 =back
+
+=head1 SOURCE AVAILABILITY
+
+This source is part of a SourceForge project which always has the
+latest sources in CVS, as well as all of the previous releases.
+
+	https://sourceforge.net/projects/brian-d-foy/
+	
+If, for some reason, I disappear from the world, one of the other
+members of the project can shepherd this module appropriately.
 
 =head1 AUTHOR
 
