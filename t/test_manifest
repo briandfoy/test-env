@@ -1,3 +1,4 @@
 load.t
+prereq.t
 pod.t
 env.t
