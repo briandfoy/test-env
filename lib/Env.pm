@@ -6,7 +6,7 @@ use base qw(Exporter);
 use vars qw(@EXPORT $VERSION);
 
 @EXPORT  = qw(env_ok);
-$VERSION = 0.11;
+$VERSION = sprintf "%d.%02d", q$Revision$ =~ m/ (\d+) \. (\d+) /xg;
 
 use Test::Builder;
 
@@ -77,7 +77,7 @@ brian d foy, C<< <bdfoy@cpan.org> >>
 
 =head1 COPYRIGHT
 
-Copyright 2002-2004, brian d foy, All rights reserved
+Copyright 2002-2005, brian d foy, All rights reserved
 
 You can use this module under the same terms as Perl itself.
 
