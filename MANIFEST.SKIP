@@ -1,3 +1,10 @@
 .cvsignore
 .releaserc
 Test-Env-*
+blib/
+CVS
+Makefile.old
+MANIFEST.SKIP
+MANIFEST.bak
+pm_to_blib
+Makefile$
