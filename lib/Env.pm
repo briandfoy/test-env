@@ -3,9 +3,10 @@ package Test::Env;
 use strict;
 
 use base qw(Exporter);
-use vars qw(@EXPORT);
+use vars qw(@EXPORT $VERSION);
 
-@EXPORT = qw(env_ok);
+@EXPORT  = qw(env_ok);
+$VERSION = 0.06;
 
 use Test::Builder;
 

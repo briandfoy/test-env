@@ -1,4 +1,7 @@
 # $Id$
 
+0.6    - Wed Oct  9 00:41:31 CDT 2002
+	+ cleaned up the distribution (no code changes)
+
 0.5_02 - Mon Sep  9 11:58:52 CDT 2002
     + got rid of Test::Manifest
