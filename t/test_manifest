@@ -1,4 +1,5 @@
+# $Id$
 load.t
-prereq.t
 pod.t
+prereq.t
 env.t

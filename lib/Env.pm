@@ -6,7 +6,7 @@ use base qw(Exporter);
 use vars qw(@EXPORT $VERSION);
 
 @EXPORT  = qw(env_ok);
-$VERSION = 0.06;
+$VERSION = 0.11;
 
 use Test::Builder;
 
@@ -39,7 +39,7 @@ sub env_ok($$)
 	{
 	my $name  = shift;
 	my $value = shift;
-	
+
 	unless( exists $ENV{$name} )
 		{
 		$Test->ok(0);
@@ -58,7 +58,7 @@ sub env_ok($$)
 		$Test->ok(1);
 		}
 	}
-	
+
 =back
 
 =head1 SOURCE AVAILABILITY
@@ -66,18 +66,18 @@ sub env_ok($$)
 This source is part of a SourceForge project which always has the
 latest sources in CVS, as well as all of the previous releases.
 
-	https://sourceforge.net/projects/brian-d-foy/
-	
+	http://sourceforge.net/projects/brian-d-foy/
+
 If, for some reason, I disappear from the world, one of the other
 members of the project can shepherd this module appropriately.
 
 =head1 AUTHOR
 
-brian d foy, E<lt>brian d foyE<gt>
+brian d foy, C<< <bdfoy@cpan.org> >>
 
 =head1 COPYRIGHT
 
-Copyright 2002, brian d foy, All rights reserved
+Copyright 2002-2004, brian d foy, All rights reserved
 
 You can use this module under the same terms as Perl itself.
 
