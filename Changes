@@ -1,5 +1,8 @@
 # $Id$
 
+1.06 - Wed May 17 21:31:07 2006
+	* Updated dist for copyright and kwalitee. No need to upgrade.
+
 1.05 - Tue Mar  8 17:53:53 2005
 	* Added POD coverage tests: no need to upgrade
 
