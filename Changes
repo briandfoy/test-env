@@ -1,5 +1,9 @@
 # $Id$
 
+1.07 - Tue Jan  9 22:46:57 2007
+	* updated copyright and license info
+	* no code changes, so no need to upgrade
+
 1.06 - Wed May 17 21:31:07 2006
 	* Updated dist for copyright and kwalitee. No need to upgrade.
 
