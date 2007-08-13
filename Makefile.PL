@@ -8,7 +8,9 @@ WriteMakefile
 	'NAME'           => 'Test::Env',
 	'ABSTRACT'       => 'Test the environment',
 	'VERSION_FROM'   => 'lib/Env.pm',
-	'LICENSE'       => 'perl',
+	'LICENSE'        => 'perl',
+	'AUTHOR'         => 'brian d foy <bdfoy@cpan.org>',
+	
 	'PREREQ_PM'      => {
 		'Test::Builder'         => '0',
 		'Test::Builder::Tester' => '0',
