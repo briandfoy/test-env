@@ -1,5 +1,8 @@
 # $Id$
 
+1.08 - Sun Aug 12 21:48:32 2007
+	* dist cleanup to fix META.yml. No need to upgrade.
+
 1.07 - Tue Jan  9 22:46:57 2007
 	* updated copyright and license info
 	* no code changes, so no need to upgrade
