@@ -16,9 +16,11 @@ WriteMakefile
 		'Test::Builder::Tester' => '0',
 		'Test::More'            => '0',
 		},
+
 	'PM' => {
 		'lib/Env.pm'     => '$(INST_LIBDIR)/Env.pm',
 		},
+
 	'MAN3PODS' =>
 		{
 		'lib/Env.pm' => '$(INST_MAN3DIR)/Test::Env.3',
