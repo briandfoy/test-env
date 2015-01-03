@@ -1,4 +1,3 @@
-# $Id$
 package Test::Env;
 use strict;
 
