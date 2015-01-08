@@ -2,20 +2,48 @@ require 5.008;
 use strict;
 use warnings;
 
-my $github    = 'https://github.com/briandfoy/';
-my $main_file = 'lib/Test/Env.pm';
+use File::Spec::Functions qw(catfile);
+
+my $module    = 'Test::Env';
+my $github    = 'https://github.com/briandfoy/Test-Env';
+my $main_file = catfile( 'lib', split /::/, "$module.pm" );
 
 my %WriteMakefile = (
-	'NAME'           => 'Test::Env',
+	'NAME'           => $module,
 	'ABSTRACT_FROM'  => $main_file,
 	'VERSION_FROM'   => $main_file,
 	'LICENSE'        => 'perl',
 	'AUTHOR'         => 'brian d foy <bdfoy@cpan.org>',
-	
-	'PREREQ_PM'      => {
+
+	'CONFIGURE_REQUIRES' => {
+		'ExtUtils::MakeMaker' => '6.64',
+		},
+
+	'BUILD_REQUIRES' => {
+		},
+
+	'TEST_REQUIRES' => {
+		'Test::More'            => '0.94',
 		'Test::Builder'         => '0',
 		'Test::Builder::Tester' => '0',
-		'Test::More'            => '0',
+		},
+
+	'PREREQ_PM'     => {
+		},
+
+	'META_MERGE' => {
+		'meta-spec' => { version => 2 },
+		resources => {
+			repository => {
+				type => 'git',
+				url  => "$github.git",
+				web  => $github,
+				},
+			bugtraker => {
+				web    => "$github/issues",
+				},
+			homepage => $github,
+			},
 		},
 
 	clean  => { FILES    => 'Test-Env-*' },
