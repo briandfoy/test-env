@@ -49,7 +49,7 @@ my %WriteMakefile = (
 			},
 		},
 
-	clean  => { FILES    => 'Test-Env-*' },
+	clean => { FILES => "$dist-*" },
 	);
 
 
