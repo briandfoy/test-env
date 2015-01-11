@@ -1,12 +1,5 @@
-.cvsignore
-.releaserc
-.lwpcookies
-Test-.*
-CVS
-blib
-\.*bak
-Makefile$
-MANIFEST.SKIP
-\.DS_Store
-\.\#
-\.old
+#!include_default
+
+\.releaserc
+\.lwpcookies
+\.travis\.yml
