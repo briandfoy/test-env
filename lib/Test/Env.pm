@@ -37,19 +37,16 @@ Ok if the environment variable NAME is VALUE.
 
 =cut
 
-sub env_ok($$)
-	{
+sub env_ok($$) {
 	my $name  = shift;
 	my $value = shift;
 
-	unless( exists $ENV{$name} )
-		{
+	unless( exists $ENV{$name} ) {
 		$Test->ok(0);
 		$Test->diag( "Environment variable [$name] missing!\n",
 			"\tExpected [$value]\n" );
 		}
-	elsif( $ENV{$name} ne $value )
-		{
+	elsif( $ENV{$name} ne $value ) {
 		$Test->ok(0);
 		$Test->diag( "Environment variable [$name] has wrong value!\n",
 			"\tExpected [$value]\n",
