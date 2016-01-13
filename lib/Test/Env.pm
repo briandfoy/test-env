@@ -1,8 +1,9 @@
 package Test::Env;
 use strict;
 
-use base qw(Exporter);
 use vars qw(@EXPORT $VERSION);
+
+use Exporter qw(import);
 
 @EXPORT  = qw(env_ok);
 $VERSION = 1.08;
