@@ -1,5 +1,8 @@
 Revision history for Perl module Test::Env
 
+1.082 2016-01-24T17:43:14Z
+	* Remove the Test::Prereq test.
+
 1.081 2016-01-13T19:08:50Z
 	* Freshen module
 
