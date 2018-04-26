@@ -2,6 +2,16 @@
 
 =encoding utf8
 
+=for HTML <a href="https://travis-ci.org/briandfoy/test-env"><img src="https://travis-ci.org/briandfoy/test-env.svg?branch=master" /></a>
+
+=for HTML <a href='https://ci.appveyor.com/project/briandfoy/test-env'><img src='https://ci.appveyor.com/api/projects/status/mak4v0ng0r2vmf0i?svg=true' /></a>
+
+=for HTML <a href='https://coveralls.io/github/briandfoy/test-env?branch=master'><img src='https://coveralls.io/repos/github/briandfoy/test-env/badge.svg?branch=master' alt='Coverage Status' /></a>
+
+=for HTML <a href="https://github.com/briandfoy/test-env/blob/master/LICENSE"><img src="https://img.shields.io/cpan/l/Test-Env.svg" /></a>
+
+=for HTML <a href="http://www.metacpan.org/module/Test::Env"><img src="https://img.shields.io/cpan/v/Test-Env.svg" /></A>
+
 =head1 The Test::Env module
 
 This is the I<README> for the L<Test::Env> Perl module. You're probably
