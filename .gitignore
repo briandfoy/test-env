@@ -27,3 +27,6 @@ nytprof.out
 *.bak
 Test-Env-*
 *.icould
+MANIFEST*[123456789]
+Changes*[123456789]
+
