@@ -1,5 +1,8 @@
 Revision history for Perl module Test::Env
 
+1.085 2021-01-16T13:18:24Z
+	* freshen distro, remove Travis CI, add Github Actions
+
 1.085 2021-01-16T12:54:07Z
 	* freshen distro, remove Travis CI, add Github Actions
 
