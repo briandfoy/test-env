@@ -6,7 +6,7 @@ use vars qw(@EXPORT $VERSION);
 use Exporter qw(import);
 
 @EXPORT  = qw(env_ok);
-$VERSION = '1.084';
+$VERSION = '1.085';
 
 use Test::Builder;
 
